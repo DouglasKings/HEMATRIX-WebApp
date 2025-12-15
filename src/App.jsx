@@ -94,7 +94,7 @@ const teamMembers = [
       email: "douglaskings2@gmail.com",
       location: "Kampala, Uganda",
       linkedin: "https://www.linkedin.com/in/douglas-kings/",
-      portfolio: "https://kingstechnologies.netlify.app",
+      portfolio: "https://douglas-kings-kato-portfolio.vercel.app/",
     },
     bio: "Full Stack Developer with expertise in Java Spring Boot microservices, React.js, and database optimization. Proven track record building scalable backend systems including award-winning USSD-integrated platforms serving underserved communities. Combines 5+ years of ICT education experience with hands-on software development, delivering user-centric solutions in Agile environments. Passionate about leveraging technology to solve real-world problems while mentoring emerging tech talent.",
     skills: [
@@ -116,13 +116,13 @@ const teamMembers = [
         company: "Sumic IT Solutions Ltd",
         role: "Full Stack Developer",
         period: "Oct 2025 - Present",
-        desc: "Lead developer for the 'Entrepreneurship Booster Platform' (EU-Funded). Architected backend using Spring Boot microservices. Implemented USSD gateway APIs reaching 50,000+ rural users. Designed optimized MySQL schemas for 100K+ user base.",
+        desc: "Core developer for the 'Entrepreneurship Booster Platform' (Woord en Daad / EU Funded Project). Architected backend using Spring Boot microservices. Implemented USSD gateway APIs reaching 50,000+ rural users. Executed a migration from MySQL to PostgreSQL to optimize database performance for a 100K+ user base.",
       },
       {
         company: "Field English School (Wuhai, China)",
         role: "ICT Teacher & Multimedia Designer",
         period: "Sep 2019 - Jan 2023",
-        desc: "Taught ICT curriculum covering programming fundamentals to 300+ students. Created multimedia educational content improving engagement by 40%. Managed computer lab infrastructure for 500+ student international school.",
+        desc: "Taught English & ICT curriculum covering programming fundamentals to 300+ students. Created multimedia educational content improving engagement by 40%. Managed computer lab infrastructure for 500+ student international school.",
       },
       {
         company: "Heritage / ISU / Kings International",
