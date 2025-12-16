@@ -22,7 +22,7 @@ export const teamMembers = [
       phone: "+256 779 413 882",
       email: "info@hematrikan.com",
       location: "Kampala, Uganda",
-      linkedin: "https://www.linkedin.com/in/kenneth-male/",
+      linkedin: "https://www.linkedin.com/in/male-henry-kenneth/",
       portfolio: "https://hematrikan.com",
     },
 
