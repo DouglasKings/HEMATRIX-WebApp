@@ -69,6 +69,7 @@ export function HeroSection() {
               >
                 Get Started
               </a>
+
               <a
                 href="#services"
                 className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-6 py-3.5 text-base font-semibold text-slate-700 shadow-sm hover:border-indigo-200 hover:text-indigo-600 hover:shadow-md transition-all"
@@ -212,8 +213,8 @@ export function AboutSection() {
                   <h5 className="font-bold text-lg">Vision Statement</h5>
                 </div>
                 <p className="text-slate-600">
-                  To become Africa's most trusted partner in cloud innovation and
-                  cyber intelligence.
+                  To become Africa's most trusted partner in cloud innovation
+                  and cyber intelligence.
                 </p>
               </div>
             </div>
@@ -318,9 +319,9 @@ export function ContactSection() {
     setIsSubmitting(true);
     const subject = `Website Inquiry: ${formData.name}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-    
+
     setTimeout(() => {
-      window.location.href = `mailto:info@hematrixtech.com?subject=${encodeURIComponent(
+      window.location.href = `mailto:info@hematrikan.com?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(body)}`;
       setIsSubmitting(false);
@@ -336,25 +337,25 @@ export function ContactSection() {
             {/* Left Column - Contact Info */}
             <div className="p-10 lg:p-16 text-white flex flex-col justify-between relative overflow-hidden">
               <div className="absolute top-0 right-0 -mr-16 -mt-16 h-64 w-64 rounded-full bg-indigo-600 blur-3xl opacity-20" />
-              
+
               <div>
                 <h2 className="text-3xl font-bold mb-6">
-                  Let's Secure Your Future
+                  Let&apos;s Secure Your Future
                 </h2>
                 <p className="text-indigo-200 mb-10 text-lg">
                   Ready to discuss a project or need a security consultation?
                 </p>
-                
+
                 <div className="space-y-6">
                   <ContactItem
                     icon={<MapPin />}
                     label="Visit Us"
-                    value="Kampala, Uganda"
+                    value="MUKONO,KAMPALA"
                   />
                   <ContactItem
                     icon={<Mail />}
                     label="Email Us"
-                    value="info@hematrixtech.com"
+                    value="info@hematrikan.com"
                   />
                   <ContactItem
                     icon={<Phone />}
@@ -412,7 +413,7 @@ export function ContactSection() {
                     onChange={handleInputChange}
                     required
                     className="w-full rounded-lg border-slate-200 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 py-3 px-4 bg-slate-50 transition-all"
-                    placeholder="you@example.com"
+                    placeholder="info@hematrikan.com"
                   />
                 </div>
 
