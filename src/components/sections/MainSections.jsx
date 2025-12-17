@@ -6,6 +6,8 @@
 */
 
 import React, { useState } from "react";
+// 1. IMPORT EMAILJS SDK
+import emailjs from "@emailjs/browser";
 import {
   Shield,
   Lightbulb,
@@ -299,7 +301,7 @@ export function ServicesSection() {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   CONTACT SECTION
+   CONTACT SECTION (Updated with EmailJS Logic)
    ═══════════════════════════════════════════════════════════ */
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -307,7 +309,10 @@ export function ContactSection() {
     email: "",
     message: "",
   });
+
   const [isSubmitting, setIsSubmitting] = useState(false);
+  // 2. Add Status state to control success/error messages
+  const [status, setStatus] = useState(null); // null | "success" | "error"
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -317,16 +322,36 @@ export function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const subject = `Website Inquiry: ${formData.name}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    setStatus(null); // Reset status on new submit
 
-    setTimeout(() => {
-      window.location.href = `mailto:info@hematrikan.com?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(body)}`;
-      setIsSubmitting(false);
-      setFormData({ name: "", email: "", message: "" });
-    }, 800);
+    // 3. Map your form data to the Template Variables you set up in EmailJS
+    const templateParams = {
+      from_name: formData.name, // Matches {{from_name}} in your template
+      reply_to: formData.email, // Matches {{reply_to}} in your template
+      message: formData.message, // Matches {{message}} in your template
+    };
+
+    // 4. YOUR EMAILJS KEYS
+    const SERVICE_ID = "service_lgmt3rl";
+    const TEMPLATE_ID = "template_59qww3q";
+    const PUBLIC_KEY = "t8MdzVzvtysGRrk_x";
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setIsSubmitting(false);
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+
+        // Clear the success message after 5 seconds to keep the UI clean
+        setTimeout(() => setStatus(null), 5000);
+      },
+      (error) => {
+        console.log("FAILED...", error);
+        setIsSubmitting(false);
+        setStatus("error");
+      }
+    );
   };
 
   return (
@@ -437,13 +462,23 @@ export function ContactSection() {
                   disabled={isSubmitting}
                   className="w-full flex items-center justify-center gap-2 rounded-lg bg-indigo-600 px-8 py-4 text-base font-bold text-white shadow-lg shadow-indigo-500/30 hover:bg-indigo-700 transition-all hover:shadow-xl hover:shadow-indigo-500/40 transform hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  {isSubmitting ? "Processing..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "Send Message"}
                   {!isSubmitting && <Send className="h-4 w-4" />}
                 </button>
 
-                <p className="text-xs text-center text-slate-400 mt-2">
-                  Clicking send will open your default email client.
-                </p>
+                {/* 5. SUCCESS/ERROR MESSAGES */}
+                {status === "success" && (
+                  <div className="p-4 rounded-lg bg-green-50 text-green-700 text-sm font-medium text-center border border-green-200 animate-in fade-in slide-in-from-bottom-2">
+                    Message sent successfully! We'll get back to you soon.
+                  </div>
+                )}
+
+                {status === "error" && (
+                  <div className="p-4 rounded-lg bg-red-50 text-red-700 text-sm font-medium text-center border border-red-200 animate-in fade-in slide-in-from-bottom-2">
+                    Something went wrong. Please check your internet connection
+                    and try again.
+                  </div>
+                )}
               </form>
             </div>
           </div>
