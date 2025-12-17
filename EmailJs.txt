@@ -1,8 +1,0 @@
-serviceID - service_lgmt3rl
-
-templateID - template_59qww3q
-
-publicKey - t8MdzVzvtysGRrk_x
-
-
-npm install @emailjs/browser
