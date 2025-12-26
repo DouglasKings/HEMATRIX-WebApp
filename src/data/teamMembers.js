@@ -9,6 +9,8 @@
 // Import team member images
 import douglasImg from "/assets/images/me.jpg";
 import kennethImg from "/assets/images/2.jpeg";
+import katoImg from "/assets/images/3.jpeg";
+import haroldImg from "/assets/images/5.jpeg";
 
 export const teamMembers = [
   {
@@ -103,11 +105,43 @@ export const teamMembers = [
 
   {
     id: 3,
-    name: "Team Member 3",
-    role: "Cybersecurity Specialist",
-    bio: "Dedicated to protecting digital assets through advanced threat detection.",
-    placeholder: true,
-    // image: member3Img,
+    name: "Kato Kenneth",
+    role: "Data Engineer",
+    placeholder: false,
+    image: katoImg,
+    contact: {
+      phone: "+256 ...",
+      email: "...",
+      location: "Kampala, Uganda",
+      linkedin: "#",
+    },
+    bio: "Data Engineer passionate about building secure, scalable ETL pipelines with Python, SQL, Airflow, and Dagster. Experienced in leveraging IBM data tools and Apache frameworks to transform raw data into actionable insights, I thrive on solving complex problems with practical, reusable solutions.",
+    skills: [
+      "Python",
+      "SQL",
+      "Apache Airflow",
+      "Dagster",
+      "ETL Pipelines",
+      "IBM Data Tools",
+      "Apache Spark",
+      "Data Modeling",
+    ],
+    experience: [
+      {
+        company: "Information Needed",
+        role: "Data Engineer",
+        period: "Present",
+        desc: "Building and optimizing scalable data architectures and transformation pipelines.",
+      },
+      {
+        company: "ISBAT University",
+        role: "Assistant Lecturer",
+        period: "2015 - Present",
+        desc: "Delivered comprehensive training in C programming, Version Control, and DevOps to hundreds of students and professionals. Mentored emerging tech talent and supported technology education across multiple universities and training institutions throughout Uganda.",
+      },
+    ],
+
+    languages: ["English (Fluent)", "Luganda (Native)"],
   },
 
   {
@@ -141,7 +175,11 @@ export const teamMembers = [
       "Adobe Creative Suite",
     ],
 
-    languages: ["English (Fluent)", "German (A1 - Goethe-Zentrum)"],
+    languages: [
+      "English (Fluent)",
+      "German (A1 - Goethe-Zentrum)",
+      "Luganda (Native)",
+    ],
 
     experience: [
       {
@@ -181,6 +219,65 @@ export const teamMembers = [
       "1st Place Winner - Multi-University Hackathon (Sep 2025)",
       "Galactic Problem Solver - NASA International Space Apps Challenge (Oct 2024)",
       "Certificate of Participation - EU-Funded Hackathon",
+    ],
+  },
+
+  {
+    id: 5,
+    name: "Harold",
+    role: "Java Backend Developer",
+    placeholder: false,
+    image: haroldImg,
+
+    // This frames the face perfectly by ignoring the ceiling
+    imagePosition: "center 20%",
+
+    contact: {
+      location: "Kampala, Uganda",
+      linkedin: "#",
+      email: "info@hematrikan.com",
+    },
+
+    bio: "Expert Java Backend Developer with a deep focus on cloud infrastructure and system reliability. Harold played a pivotal role as a core developer for the Entrepreneurship Booster Platform (EBP), architecting high-performance microservices and ensuring seamless backend integration for large-scale user bases. He is passionate about writing clean, maintainable code and optimizing server-side performance.",
+
+    skills: [
+      "Java Spring Boot",
+      "Backend Architecture",
+      "Microservices",
+      "Cloud Infrastructure",
+      "System Reliability Engineering",
+      "MySQL",
+      "RESTful APIs",
+      "Docker",
+    ],
+
+    experience: [
+      {
+        company: "HEMATRIKAN INNOVATION LIMITED",
+        role: "Technical Lead",
+        period: "2025 - Present",
+        desc: "Directing technical strategy and leading development for enterprise-grade digital solutions and secure backend architectures.",
+      },
+      {
+        company: "Sumic IT Solutions Ltd",
+        role: "Java Backend Developer",
+        period: "2024 - 2025",
+        desc: "Key contributor to the EBP (Entrepreneurship Booster Platform). Developed core microservices using Spring Boot, handling data synchronization and user authentication for thousands of platform users.",
+      },
+    ],
+
+    education: [
+      {
+        degree: "B.Sc. in Applied Information Technology",
+        school: "ISBAT University",
+      },
+    ],
+
+    languages: ["English (Fluent)", "Luganda (Native)"],
+
+    awards: [
+      "Core Developer - EBP Platform Scaling Project",
+      "Excellence in Microservices Architecture",
     ],
   },
 ];
