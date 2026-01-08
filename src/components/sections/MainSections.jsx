@@ -26,6 +26,8 @@ import {
 import { services } from "../../data/services";
 import { socialLinks, companySlogan } from "../../data/socialLinks";
 import { ServiceCard, ValueCard, ContactItem, SocialLink, XIcon } from "../ui";
+
+// 2. LOGO IMPORT
 import logoImg from "/assets/images/logo.png";
 
 /* ═══════════════════════════════════════════════════════════
@@ -97,17 +99,20 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column - Visual */}
+          {/* Right Column - Visual Logo Display */}
           <div className="relative lg:ml-auto w-full max-w-xl">
-            <div className="relative rounded-2xl bg-white p-3 shadow-2xl shadow-indigo-900/10 ring-1 ring-slate-100 transform rotate-1 hover:rotate-0 transition-transform duration-500">
+            <div className="relative rounded-2xl bg-white p-2 shadow-2xl shadow-indigo-900/10 ring-1 ring-slate-100 transform rotate-1 hover:rotate-0 transition-transform duration-500">
+              {/* INCREASED SIZE: padding reduced (p-2) and width increased to w-[85%] */}
               <div className="rounded-xl bg-slate-50 overflow-hidden flex items-center justify-center aspect-[4/3] relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-slate-100 opacity-50"></div>
                 <img
-                  src={logoImg}
-                  alt="Hematrix Visual"
-                  className="relative z-10 w-2/3 h-auto object-contain drop-shadow-xl transform hover:scale-105 transition-transform duration-700"
+                  src={logoImg} // Fixed: Now using the imported logoImg variable
+                  alt="Hematrix Visual Logo"
+                  className="relative z-10 w-[85%] h-auto object-contain drop-shadow-2xl transform hover:scale-110 transition-transform duration-700"
                 />
               </div>
+
+              {/* Floating Security Badge */}
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl shadow-slate-400/20 border border-slate-50 flex items-center gap-3 animate-bounce-slow">
                 <div className="p-2 bg-green-100 rounded-lg text-green-600 shadow-sm">
                   <Shield className="h-6 w-6" />
@@ -301,7 +306,7 @@ export function ServicesSection() {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   CONTACT SECTION (Updated with EmailJS Logic)
+   CONTACT SECTION
    ═══════════════════════════════════════════════════════════ */
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -311,8 +316,7 @@ export function ContactSection() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  // 2. Add Status state to control success/error messages
-  const [status, setStatus] = useState(null); // null | "success" | "error"
+  const [status, setStatus] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -322,32 +326,26 @@ export function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setStatus(null); // Reset status on new submit
+    setStatus(null);
 
-    // 3. Map your form data to the Template Variables you set up in EmailJS
     const templateParams = {
-      from_name: formData.name, // Matches {{from_name}} in your template
-      reply_to: formData.email, // Matches {{reply_to}} in your template
-      message: formData.message, // Matches {{message}} in your template
+      from_name: formData.name,
+      reply_to: formData.email,
+      message: formData.message,
     };
 
-    // 4. YOUR EMAILJS KEYS
     const SERVICE_ID = "service_lgmt3rl";
     const TEMPLATE_ID = "template_59qww3q";
     const PUBLIC_KEY = "t8MdzVzvtysGRrk_x";
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
       (response) => {
-        console.log("SUCCESS!", response.status, response.text);
         setIsSubmitting(false);
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
-
-        // Clear the success message after 5 seconds to keep the UI clean
         setTimeout(() => setStatus(null), 5000);
       },
       (error) => {
-        console.log("FAILED...", error);
         setIsSubmitting(false);
         setStatus("error");
       }
@@ -375,7 +373,7 @@ export function ContactSection() {
                   <ContactItem
                     icon={<MapPin />}
                     label="Visit Us"
-                    value="MUKONO,KAMPALA"
+                    value="MUKONO, KAMPALA"
                   />
                   <ContactItem
                     icon={<Mail />}
@@ -466,7 +464,6 @@ export function ContactSection() {
                   {!isSubmitting && <Send className="h-4 w-4" />}
                 </button>
 
-                {/* 5. SUCCESS/ERROR MESSAGES */}
                 {status === "success" && (
                   <div className="p-4 rounded-lg bg-green-50 text-green-700 text-sm font-medium text-center border border-green-200 animate-in fade-in slide-in-from-bottom-2">
                     Message sent successfully! We'll get back to you soon.

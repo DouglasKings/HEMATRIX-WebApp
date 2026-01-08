@@ -7,12 +7,17 @@
 
 import React from "react";
 import { Menu, X, ChevronRight } from "lucide-react";
-import logoImg from "/assets/images/logo.png";
+import logoImg from "/assets/images/logo1.png";
 
 /* ═══════════════════════════════════════════════════════════
    HEADER COMPONENT - Main site header
    ═══════════════════════════════════════════════════════════ */
-export function Header({ scrolled, mobileMenuOpen, setMobileMenuOpen, scrollToTop }) {
+export function Header({
+  scrolled,
+  mobileMenuOpen,
+  setMobileMenuOpen,
+  scrollToTop,
+}) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ease-in-out ${
@@ -32,7 +37,7 @@ export function Header({ scrolled, mobileMenuOpen, setMobileMenuOpen, scrollToTo
             <img
               src={logoImg}
               alt="Hematrix Logo"
-              className="relative h-10 w-10 object-contain drop-shadow-sm"
+              className="relative h-14 w-auto object-contain drop-shadow-sm transition-transform group-hover:scale-105"
             />
           </div>
           <div>
@@ -76,10 +81,7 @@ export function Header({ scrolled, mobileMenuOpen, setMobileMenuOpen, scrollToTo
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl md:hidden animate-in slide-in-from-top-5">
           <div className="flex flex-col p-6 space-y-4 text-base font-medium text-slate-700">
-            <MobileLink
-              onClick={() => setMobileMenuOpen(false)}
-              href="#about"
-            >
+            <MobileLink onClick={() => setMobileMenuOpen(false)} href="#about">
               About
             </MobileLink>
             <MobileLink onClick={() => setMobileMenuOpen(false)} href="#team">

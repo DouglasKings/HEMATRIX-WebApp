@@ -9,7 +9,7 @@ import React from "react";
 import { Linkedin, Instagram, Youtube, Github } from "lucide-react";
 import { socialLinks } from "../../data/socialLinks";
 import { SocialLink, XIcon } from "../ui";
-import logoImg from "/assets/images/logo.png";
+import logoImg from "/assets/images/logo.jpeg";
 
 export default function Footer() {
   return (
@@ -23,7 +23,7 @@ export default function Footer() {
               <img
                 src={logoImg}
                 alt="Hematrikan"
-                className="h-8 w-8 object-contain brightness-0 invert"
+                className="h-12 w-auto brightness-110"
               />
               <span className="text-white font-bold text-lg tracking-tight">
                 HEMATRIKAN INNOVATION
