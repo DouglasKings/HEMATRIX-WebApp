@@ -10,7 +10,9 @@
 import douglasImg from "/assets/images/me.jpg";
 import kennethImg from "/assets/images/2.jpeg";
 import katoImg from "/assets/images/3.jpeg";
+import nasurudinImg from "/assets/images/7.jpeg";
 import haroldImg from "/assets/images/5.jpeg";
+import ayesigaImg from "/assets/images/6.jpg";
 
 export const teamMembers = [
   {
@@ -96,11 +98,64 @@ export const teamMembers = [
 
   {
     id: 2,
-    name: "Team Member 2",
-    role: "Technical Lead",
-    bio: "Expert in cloud infrastructure architecture and system reliability engineering.",
-    placeholder: true,
-    // image: member2Img,
+    name: "Ayesiga Christopher",
+    role: "Senior Cybersecurity & Forensics Lead",
+    placeholder: false,
+    image: ayesigaImg,
+    //imagePosition: "center 10%",
+    contact: {
+      email: "info@cpinfologlegacy.com",
+      location: "Kampala, Uganda",
+      linkedin: "https://www.linkedin.com/in/ayesiga-christopher/", // Update with actual link if available
+    },
+    bio: "With over 9 years in the field of Cybersecurity, Ayesiga Christopher is a dedicated expert in digital forensics and information security. He bridges the gap between academia and industry, focusing on malware analysis, incident response, and compliance standards. His research contributes significantly to the field of memory forensics and IoT network security.",
+    skills: [
+      "Digital Forensics",
+      "Malware Analysis",
+      "Incident Response",
+      "Information Security Management",
+      "Machine Learning (AWS Academy)",
+      "Network Security (CNSS)",
+      "Digital Evidence Handling",
+      "Academic Research",
+    ],
+    experience: [
+      {
+        company: "CP InfoLog Legacy (CPIL)",
+        role: "Senior Cybersecurity Analyst / Technical Manager",
+        period: "2019 - Present",
+        desc: "Directing technical security operations and digital forensic investigations. Implementing expert-driven risk management and pioneering innovative cyber resilience solutions for organizations across Africa.",
+      },
+      {
+        company: "ISBAT University",
+        role: "Assistant Lecturer",
+        period: "2024 - Present",
+        desc: "Lecturing on specialized topics in Digital Forensics and Information Security, shaping the next generation of security professionals.",
+      },
+      {
+        company: "Uganda Police Force Headquarters",
+        role: "Forensic Internee",
+        period: "2017",
+        desc: "Gained hands-on experience in digital evidence collection and forensic analysis within the national security framework.",
+      },
+    ],
+    education: [
+      {
+        degree: "Master's Degree in Digital Forensics & Information Security",
+        school: "National Forensic Sciences University, India",
+        year: "2023",
+      },
+      {
+        degree: "B.Sc. in Computer Security & Forensics",
+        school: "UTAMU",
+        year: "2019",
+      },
+    ],
+    awards: [
+      "Certified Network Security Specialist (CNSS)",
+      "Published Researcher: 'Detecting API Hooking in Memory Forensics'",
+      "Former Guild President - UTAMU (2018-2019)",
+    ],
   },
 
   {
@@ -110,8 +165,8 @@ export const teamMembers = [
     placeholder: false,
     image: katoImg,
     contact: {
-      phone: "+256 ...",
-      email: "...",
+      phone: "+256779190915",
+      email: "katokeneth@outlook.com",
       location: "Kampala, Uganda",
       linkedin: "#",
     },
@@ -143,9 +198,70 @@ export const teamMembers = [
 
     languages: ["English (Fluent)", "Luganda (Native)"],
   },
-
   {
     id: 4,
+    name: "Kibwika Nasurudin Bashir",
+    role: "Assistant Lecturer & Technical Trainer",
+    placeholder: false,
+    image: nasurudinImg,
+    contact: {
+      phone: "+256 701 603 731 ",
+      email: "nass.aklieve@gmail.com",
+      location: "Kampala, Uganda",
+      linkedin: "https://www.linkedin.com/in/male-henry-kenneth/",
+    },
+    bio: "Mr. Kibwika Nasurudin Bashir is a highly experienced IT professional with over 10 years of extensive experience in university, corporate, and career institution training. He has a profound understanding of various technologies and has taught diverse groups including graduates, diplomats, and corporate professionals in multi-cultural environments. Outside of technology, he is a dynamic individual who serves as the Sports Coordinator at ISBAT University, bringing a high level of energy and effective multi-tasking to the team.",
+    skills: [
+      "Software Engineering",
+      "Database Systems",
+      "Information Systems Management",
+      "Modern Training Methodologies",
+      "Corporate Training",
+      "Project Development",
+      "Multicultural Communication",
+      "Sports Coordination",
+    ],
+    experience: [
+      {
+        company: "ISBAT University",
+        role: "Lecturer & Sports Coordinator",
+        period: "2012 - Present",
+        desc: "Delivering academic lectures in Information Technology, managing student development programs, and overseeing university-wide sports activities.",
+      },
+      {
+        company: "Aptech Computer Education",
+        role: "Academic Faculty",
+        period: "2009 - 2012",
+        desc: "Responsible for technical curriculum delivery and student career development in software engineering and systems management.",
+      },
+    ],
+    education: [
+      {
+        degree: "MSc. in Information Technology (MSCIT)",
+        school: "Specialized Post-Graduate Institution",
+      },
+      {
+        degree: "Bachelors of Science in Information Technology",
+        school: "Recognized University",
+      },
+      {
+        degree: "Advanced Diploma in Software Engineering (ADSE)",
+        school: "Professional Technical Institute",
+      },
+      {
+        degree: "Diploma in Information System Management (DISM)",
+        school: "Professional Technical Institute",
+      },
+    ],
+    awards: [
+      "Author: Article in Database Systems and Information Systems",
+      "Sports Coordinator - ISBAT University",
+      "10+ Years of Academic Excellence Recognition",
+    ],
+    languages: ["English (Fluent)", "Luganda (Native)"],
+  },
+  {
+    id: 5,
     name: "Douglas Kings Kato",
     role: "Full Stack Developer",
     placeholder: false,
@@ -223,7 +339,7 @@ export const teamMembers = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Harold",
     role: "Java Backend Developer",
     placeholder: false,

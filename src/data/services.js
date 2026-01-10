@@ -15,6 +15,7 @@ import {
   Network,
   Settings,
   ShoppingBag,
+  Search, // Added for Forensics/Discovery
 } from "lucide-react";
 
 export const services = [
@@ -24,39 +25,39 @@ export const services = [
     icon: Cloud,
     color: "bg-blue-500",
     description:
-      "Seamless migration to Azure, AWS, and Google Cloud with strategic cost optimization and zero data loss.",
+      "Strategic migration to Azure, AWS, and Google Cloud with enterprise-grade optimization and data integrity assurance.",
   },
   {
     id: 2,
-    title: "Cybersecurity",
+    title: "Cybersecurity & Forensics",
     icon: Lock,
     color: "bg-indigo-600",
     description:
-      "Advanced penetration testing, real-time threat monitoring, and rapid incident response to protect your digital assets.",
+      "Advanced penetration testing combined with digital forensic investigation and incident response to protect and recover digital assets.",
   },
   {
     id: 3,
-    title: "Info Systems",
+    title: "Info Systems Consultancy",
     icon: Database,
     color: "bg-cyan-500",
     description:
-      "Custom secure application development, business intelligence (BI), and process automation for efficiency.",
+      "Strategic advisory on information systems architecture, business intelligence (BI), and process automation tailored for African markets.",
   },
   {
     id: 4,
-    title: "Network Infrastructure",
-    icon: Network,
-    color: "bg-emerald-600",
+    title: "Digital Forensic Discovery",
+    icon: Search,
+    color: "bg-red-600",
     description:
-      "Expert setup of secure LAN/WAN, structured cabling, and resilient server environments for reliable connectivity.",
+      "Expert identification, preservation, and analysis of digital evidence for legal, corporate, and private investigations.",
   },
   {
     id: 5,
-    title: "Managed IT Support",
+    title: "Risk Management Advisory",
     icon: Settings,
     color: "bg-orange-500",
     description:
-      "Proactive 24/7 system monitoring, troubleshooting, and preventive maintenance to ensure business continuity.",
+      "Expert-driven risk assessment and mitigation strategies to enhance organizational resilience against emerging global cyber threats.",
   },
   {
     id: 6,
@@ -64,30 +65,30 @@ export const services = [
     icon: Server,
     color: "bg-slate-700",
     description:
-      "State-of-the-art backup solutions and resilient architectures to safeguard data against any unforeseen failures.",
+      "State-of-the-art backup solutions and resilient architectures to safeguard data against unforeseen infrastructure failures.",
   },
   {
     id: 7,
-    title: "Training & E-Learning",
+    title: "Training & Capacity Building",
     icon: Activity,
     color: "bg-teal-500",
     description:
-      "Capacity building, LMS implementation, and security awareness workshops to empower your digital workforce.",
+      "Corporate workshops and E-Learning implementation (LMS) focused on cybersecurity awareness and modern ICT skills.",
   },
   {
     id: 8,
-    title: "ICT Advisory & Procurement",
+    title: "ICT Sourcing & Procurement",
     icon: ShoppingBag,
     color: "bg-amber-600",
     description:
-      "Strategic sourcing of hardware, software licensing, and tech consultancy to eliminate workflow pain points.",
+      "Strategic procurement of high-performance hardware and software licensing to streamline enterprise workflows.",
   },
   {
     id: 9,
-    title: "Compliance & Governance",
+    title: "Governance & Compliance",
     icon: CheckCircle,
     color: "bg-violet-500",
     description:
-      "Strategic guidance on IT governance, data protection regulations, and international tech standards (ISO/ITIL).",
+      "Guidance on data protection regulations (GDPR/DPA) and international technology standards (ISO 27001/ITIL).",
   },
 ];
