@@ -8,6 +8,7 @@
 */
 
 import React, { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { Header } from "./components/layout/Navigation";
 import Footer from "./components/layout/Footer";
 import {
@@ -81,6 +82,7 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
+      <Analytics />
     </div>
   );
 }
