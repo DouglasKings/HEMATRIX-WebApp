@@ -13,6 +13,7 @@ import katoImg from "/assets/images/3.jpeg";
 import nasurudinImg from "/assets/images/7.jpeg";
 import haroldImg from "/assets/images/5.jpeg";
 import ayesigaImg from "/assets/images/6.jpg";
+import AèlisImg from "/assets/images/8.jpeg";
 
 export const teamMembers = [
   {
@@ -370,15 +371,15 @@ export const teamMembers = [
     experience: [
       {
         company: "HEMATRIKAN INNOVATION LIMITED",
-        role: "Technical Lead",
+        role: "Java Backend Developer",
         period: "2025 - Present",
-        desc: "Directing technical strategy and leading development for enterprise-grade digital solutions and secure backend architectures.",
+        desc: "Developing enterprise-grade digital solutions and secure backend architectures.",
       },
       {
         company: "Sumic IT Solutions Ltd",
         role: "Java Backend Developer",
         period: "2024 - 2025",
-        desc: "Key contributor to the EBP (Entrepreneurship Booster Platform). Developed core microservices using Spring Boot, handling data synchronization and user authentication for thousands of platform users.",
+        desc: "Key contributor to the EBP (Entrepreneurship Booster Platform).",
       },
     ],
 
@@ -392,8 +393,62 @@ export const teamMembers = [
     languages: ["English (Fluent)", "Luganda (Native)"],
 
     awards: [
-      "Core Developer - EBP Platform Scaling Project",
+      "Java Developer - EBP Platform Scaling Project",
       "Excellence in Microservices Architecture",
     ],
+  },
+
+  {
+    id: 7,
+    name: "Aèlis",
+    role: "Data Analyst, Ai engineer",
+    placeholder: false,
+    image: AèlisImg,
+
+    // This frames the face perfectly by ignoring the ceiling
+    //imagePosition: "center 20%",
+
+    contact: {
+      location: "Kampala, Uganda",
+      linkedin: "www.linkedin.com/in/alice-namagembe-18b2b22a1",
+      email: "info@hematrikan.com",
+    },
+
+    bio: "Alice Namagembe is a data analyst with a strong foundation in Artificial Intelligence and Machine Learning. My expertise lies in transforming raw data into actionable insights through data cleaning, statistical analysis, and visualization. I am passionate about responsible AI, data quality, and empowering communities through technology.",
+
+    skills: [
+      "Power bi training",
+      "Aws",
+      "Azure",
+      "SQL",
+      "Data cleaning",
+      "Tableau",
+      "Python",
+      "R",
+    ],
+
+    experience: [
+      {
+        company: "HEMATRIKAN INNOVATION LIMITED",
+        role: "Data Analyst, Ai engineer",
+        period: "2025 - Present",
+        desc: "Developing enterprise-grade digital solutions and secure backend architectures.",
+      },
+      {
+        company: "Sumic IT Solutions Ltd",
+        role: "Frontend Developer",
+        period: "2024 - 2025",
+        desc: "Key contributor to the EBP (Entrepreneurship Booster Platform), developing frontend applications.",
+      },
+    ],
+
+    education: [
+      {
+        degree: "B.Sc. in Artificial Intelligence",
+        school: "ISBAT University",
+      },
+    ],
+
+    languages: ["English (Fluent)", "Luganda (Native)"],
   },
 ];
