@@ -14,6 +14,7 @@ import nasurudinImg from "/assets/images/7.jpeg";
 import haroldImg from "/assets/images/5.jpeg";
 import ayesigaImg from "/assets/images/6.jpg";
 import AèlisImg from "/assets/images/8.jpeg";
+import YonahImg from "/assets/images/9.jpeg";
 
 export const teamMembers = [
   {
@@ -282,13 +283,13 @@ export const teamMembers = [
       "Java Spring Boot",
       "Microservices",
       "React.js",
-      "MySQL / PostgreSQL",
       "USSD Integration",
       "RESTful APIs",
-      "Docker",
+      "DevOps",
       "Git / GitHub",
-      "Python",
-      "HTML5/CSS3",
+      "Python (Django/FastAPI)",
+      "SQL & NoSQL Databases",
+      "Cloud Infrastructure (Azure)",
       "Adobe Creative Suite",
     ],
 
@@ -439,6 +440,55 @@ export const teamMembers = [
         role: "Frontend Developer",
         period: "2024 - 2025",
         desc: "Key contributor to the EBP (Entrepreneurship Booster Platform), developing frontend applications.",
+      },
+    ],
+
+    education: [
+      {
+        degree: "B.Sc. in Artificial Intelligence",
+        school: "ISBAT University",
+      },
+    ],
+
+    languages: ["English (Fluent)", "Luganda (Native)"],
+  },
+  {
+    id: 8,
+    name: "Ayesiga Yonah",
+    role: "Full Stack Developer",
+    placeholder: false,
+    image: YonahImg,
+
+    // This frames the face perfectly by ignoring the ceiling
+    //imagePosition: "center 20%",
+
+    contact: {
+      location: "Kampala, Uganda",
+      linkedin: "https://www.linkedin.com/in/ayesiga-yonah-149271265/",
+      email: "info@hematrikan.com",
+    },
+
+    bio: "Ayesiga Yonah is a versatile Full Stack Developer who excels at bridging the gap between complex backend logic and intuitive frontend experiences, building scalable web applications that leverage data-driven insights. Yonah focuses on delivering high-performance digital solutions that solve real-world problems through modern technology stacks.",
+
+    skills: [
+      "Python (Django/FastAPI)",
+      "SQL & NoSQL Databases",
+      "Cloud Infrastructure (Azure)",
+      "JavaScript (ES6+)",
+    ],
+
+    experience: [
+      {
+        company: "HEMATRIKAN INNOVATION LIMITED",
+        role: "Full Stack Developer",
+        period: "2025 - Present",
+        desc: "Developing enterprise-grade digital solutions and secure backend architectures.",
+      },
+      {
+        company: "Sumic IT Solutions Ltd",
+        role: "Mobile Developer",
+        period: "2024 - 2025",
+        desc: "Key contributor to the EBP (Entrepreneurship Booster Platform), developing Mobile applications.",
       },
     ],
 
