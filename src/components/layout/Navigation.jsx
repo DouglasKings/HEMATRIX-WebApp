@@ -7,7 +7,7 @@
 
 import React from "react";
 import { Menu, X, ChevronRight } from "lucide-react";
-import logoImg from "/assets/images/logo1.png";
+import logoImg from "/assets/images/logo.png";
 
 /* ═══════════════════════════════════════════════════════════
    HEADER COMPONENT - Main site header

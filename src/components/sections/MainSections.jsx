@@ -28,7 +28,7 @@ import { socialLinks, companySlogan } from "../../data/socialLinks";
 import { ServiceCard, ValueCard, ContactItem, SocialLink, XIcon } from "../ui";
 
 // 2. LOGO IMPORT
-import logoImg from "/assets/images/logo.png";
+import logoImg from "/assets/images/logo2.png";
 
 /* ═══════════════════════════════════════════════════════════
    HERO SECTION
@@ -348,7 +348,7 @@ export function ContactSection() {
       (error) => {
         setIsSubmitting(false);
         setStatus("error");
-      }
+      },
     );
   };
 
