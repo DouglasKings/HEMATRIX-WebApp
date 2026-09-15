@@ -378,7 +378,7 @@ export function ContactSection() {
                   <ContactItem
                     icon={<Mail />}
                     label="Email Us"
-                    value="info@hematrikan.com"
+                    value="malehenryk@hematrikan.com"
                   />
                   <ContactItem
                     icon={<Phone />}

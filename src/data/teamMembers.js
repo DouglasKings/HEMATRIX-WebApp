@@ -26,7 +26,7 @@ export const teamMembers = [
 
     contact: {
       phone: "+256 779 413 882",
-      email: "info@hematrikan.com",
+      email: "malehenryk@hematrikan.com",
       location: "Kampala, Uganda",
       linkedin: "https://www.linkedin.com/in/male-henry-kenneth/",
       portfolio: "https://hematrikan.com",
@@ -353,7 +353,7 @@ export const teamMembers = [
     contact: {
       location: "Kampala, Uganda",
       linkedin: "#",
-      email: "info@hematrikan.com",
+      email: "malehenryk@hematrikan.com",
     },
 
     bio: "Expert Java Backend Developer with a deep focus on cloud infrastructure and system reliability. Harold played a pivotal role as a core developer for the Entrepreneurship Booster Platform (EBP), architecting high-performance microservices and ensuring seamless backend integration for large-scale user bases. He is passionate about writing clean, maintainable code and optimizing server-side performance.",
@@ -412,7 +412,7 @@ export const teamMembers = [
     contact: {
       location: "Kampala, Uganda",
       linkedin: "www.linkedin.com/in/alice-namagembe-18b2b22a1",
-      email: "info@hematrikan.com",
+      email: "malehenryk@hematrikan.com",
     },
 
     bio: "Alice Namagembe is a data analyst with a strong foundation in Artificial Intelligence and Machine Learning. My expertise lies in transforming raw data into actionable insights through data cleaning, statistical analysis, and visualization. I am passionate about responsible AI, data quality, and empowering communities through technology.",
@@ -465,7 +465,7 @@ export const teamMembers = [
     contact: {
       location: "Kampala, Uganda",
       linkedin: "https://www.linkedin.com/in/ayesiga-yonah-149271265/",
-      email: "info@hematrikan.com",
+      email: "malehenryk@hematrikan.com",
     },
 
     bio: "Ayesiga Yonah is a versatile Full Stack Developer who excels at bridging the gap between complex backend logic and intuitive frontend experiences, building scalable web applications that leverage data-driven insights. Yonah focuses on delivering high-performance digital solutions that solve real-world problems through modern technology stacks.",
